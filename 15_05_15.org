@@ -1,0 +1,27 @@
+* TODO POPL Paper [0/7]
+   DEADLINE: <2015-05-19 Tue 21:00>
+
+** TODO Delete ns form
+
+
+** TODO delete type hints
+
+** TODO link multimethods with HMaps
+
+** TODO talk about how MM, HMaps, Java are the major features of core.typed
+
+
+** TODO crystal clear CONTRIBUTIONS section
+
+
+** TODO fix intro example
+
+
+** TODO refer directly to examples repo
+
+
+* Gradual Typing [0/1]
+   DEADLINE: <2015-05-19 Tue 21:00>
+
+** TODO survey for imported polymorphic functions in core.typed
+
