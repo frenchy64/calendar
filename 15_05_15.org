@@ -1,10 +1,19 @@
-* TODO POPL Paper [0/7]
+* TODO POPL Paper [1/7]
    DEADLINE: <2015-05-19 Tue 21:00>
 
-** TODO Delete ns form
+** DONE Delete ns form
+   CLOCK: [2015-05-15 Fri 19:30]--[2015-05-15 Fri 20:02] =>  0:32
 
+- Also removed mentions of check-ns, assuming core.typed is integrated
+- removed type hints
+- replaced (Foo.) with (new Foo)
 
 ** TODO delete type hints
+   CLOCK: [2015-05-15 Fri 21:11]--[2015-05-15 Fri 23:21] =>  2:10
+   CLOCK: [2015-05-15 Fri 20:02]--[2015-05-15 Fri 20:45] =>  0:43
+- what about in the type rules
+  - can't use a rewrite pass because that happens before type checking
+  - but good news I can delete the rewrite
 
 ** TODO link multimethods with HMaps
 
@@ -19,9 +28,15 @@
 
 ** TODO refer directly to examples repo
 
+** anonymise
+
+** read other POPL requirements (font size etc.)
+
+** Survey other JVM languages
 
 * Gradual Typing [0/1]
    DEADLINE: <2015-05-19 Tue 21:00>
 
 ** TODO survey for imported polymorphic functions in core.typed
 
+* TODO Push gradual typing plan
