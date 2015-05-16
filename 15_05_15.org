@@ -45,9 +45,12 @@
 
 ** TODO Survey other JVM languages
 
-* Gradual Typing [0/1]
+* Gradual Typing [1/1]
    DEADLINE: <2015-05-19 Tue 21:00>
 
-** TODO survey for imported polymorphic functions in core.typed
+** DONE survey for imported polymorphic functions in core.typed
+https://gist.github.com/frenchy64/68cf57c0b7200bc9173d
+- found 3 functions on all of github
+  - 2 are probably bogus
 
 * TODO Push gradual typing plan
