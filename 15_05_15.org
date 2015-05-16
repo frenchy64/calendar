@@ -1,4 +1,4 @@
-* TODO POPL Paper [1/7]
+* TODO POPL Paper [5/11]
    DEADLINE: <2015-05-19 Tue 21:00>
 
 ** DONE Delete ns form
@@ -8,31 +8,42 @@
 - removed type hints
 - replaced (Foo.) with (new Foo)
 
-** TODO delete type hints
+** DONE delete type hints
+   CLOCK: [2015-05-16 Sat 12:01]
+   CLOCK: [2015-05-16 Sat 11:55]--[2015-05-16 Sat 12:01] =>  0:06
+   CLOCK: [2015-05-15 Fri 23:53]--[2015-05-15 Fri 23:53] =>  0:00
    CLOCK: [2015-05-15 Fri 21:11]--[2015-05-15 Fri 23:21] =>  2:10
    CLOCK: [2015-05-15 Fri 20:02]--[2015-05-15 Fri 20:45] =>  0:43
+
 - what about in the type rules
   - can't use a rewrite pass because that happens before type checking
   - but good news I can delete the rewrite
+  - decided to make Java ops dynamically typed
 
 ** TODO link multimethods with HMaps
 
 ** TODO talk about how MM, HMaps, Java are the major features of core.typed
 
+** synergy between multimethods and occurrence typing
 
 ** TODO crystal clear CONTRIBUTIONS section
 
 
-** TODO fix intro example
+** DONE fix intro example
 
 
 ** TODO refer directly to examples repo
 
-** anonymise
+** TODO Update metatheory section with new JVM ops
 
-** read other POPL requirements (font size etc.)
+** DONE anonymise
 
-** Survey other JVM languages
+** DONE read other POPL requirements (font size etc.)
+
+- 9pt
+  - looks similar to ICFP
+
+** TODO Survey other JVM languages
 
 * Gradual Typing [0/1]
    DEADLINE: <2015-05-19 Tue 21:00>
