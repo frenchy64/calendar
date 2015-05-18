@@ -1,0 +1,70 @@
+* TODO POPL Paper [5/11]
+   DEADLINE: <2015-05-19 Tue 21:00>
+
+** DONE Delete ns form
+   CLOCK: [2015-05-15 Fri 19:30]--[2015-05-15 Fri 20:02] =>  0:32
+
+- Also removed mentions of check-ns, assuming core.typed is integrated
+- removed type hints
+- replaced (Foo.) with (new Foo)
+
+** DONE delete type hints
+   CLOCK: [2015-05-16 Sat 11:55]--[2015-05-16 Sat 12:01] =>  0:06
+   CLOCK: [2015-05-15 Fri 23:53]--[2015-05-15 Fri 23:53] =>  0:00
+   CLOCK: [2015-05-15 Fri 21:11]--[2015-05-15 Fri 23:21] =>  2:10
+   CLOCK: [2015-05-15 Fri 20:02]--[2015-05-15 Fri 20:45] =>  0:43
+
+- what about in the type rules
+  - can't use a rewrite pass because that happens before type checking
+  - but good news I can delete the rewrite
+  - decided to make Java ops dynamically typed
+
+** TODO link multimethods with HMaps
+
+** TODO talk about how MM, HMaps, Java are the major features of core.typed
+
+** synergy between multimethods and occurrence typing
+
+** TODO crystal clear CONTRIBUTIONS section
+
+
+** DONE fix intro example
+
+
+** TODO refer directly to examples repo
+
+** TODO Update metatheory section with new JVM ops
+
+** DONE anonymise
+
+** DONE read other POPL requirements (font size etc.)
+
+- 9pt
+  - looks similar to ICFP
+
+** TODO Survey other JVM languages
+
+* DONE Gradual Typing [1/1]
+   DEADLINE: <2015-05-19 Tue 21:00>
+
+** DONE survey for imported polymorphic functions in core.typed
+https://gist.github.com/frenchy64/68cf57c0b7200bc9173d
+- found 3 functions on all of github
+  - 2 are probably bogus
+
+* DONE Push gradual typing plan
+  CLOCK: [2015-05-17 Sun 07:45]--[2015-05-17 Sun 07:47] =>  0:02
+- only thing new is code from meeting
+
+* Campaign [0/1]
+
+** TODO blog post on REPL
+   CLOCK: [2015-05-17 Sun 07:50]
+- need to fix REPL in branch first
+  - need to recurse into 'do' expressions
+- don't want to break typed special forms
+  - idea: track whether a do expression is a special form
+    as you analyze it
+    - ie. `(do ::t/special-form ...)` might be special, remember that...
+- can we reuse c.c.t.check.do?
+  - not really, takes an AST, I want a function that takes Clojure syntax
