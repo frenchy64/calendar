@@ -56,10 +56,11 @@ https://gist.github.com/frenchy64/68cf57c0b7200bc9173d
   CLOCK: [2015-05-17 Sun 07:45]--[2015-05-17 Sun 07:47] =>  0:02
 - only thing new is code from meeting
 
-* Campaign [0/1]
+* Campaign [0/2]
+
+** TODO Get tests passing for REPL
 
 ** TODO blog post on REPL
-   CLOCK: [2015-05-17 Sun 07:50]
 - need to fix REPL in branch first
   - need to recurse into 'do' expressions
 - don't want to break typed special forms
@@ -68,3 +69,8 @@ https://gist.github.com/frenchy64/68cf57c0b7200bc9173d
     - ie. `(do ::t/special-form ...)` might be special, remember that...
 - can we reuse c.c.t.check.do?
   - not really, takes an AST, I want a function that takes Clojure syntax
+
+* TODO GSoC [0/1]
+
+** TODO Merge Transients
+   DEADLINE: <2015-05-18 Mon>
