@@ -42,13 +42,15 @@
   need more digging for untyped gradual polymorphic things
   - better sampling
 
-* TODO POPL Paper
+* TODO POPL Paper [0/2]
   DEADLINE: <2015-05-21 Thu>
-  combined type-check rewrite relation
+** TODO combined type-check rewrite relation
+   DEADLINE: <2015-05-20 Wed>
   takes expression
   Env exp -> type -> exp
-  - PRIORITY
-  - PROOF
+  - added hybrid checking-rewrite judgement
+  - updated everything but Java rules
+** TODO Update proof
 
 * TODO Gradual typing Plan
   - lay out all challenges
@@ -56,4 +58,3 @@
 
 * TODO require/load finish
   DEADLINE: <2015-05-21 Thu>
-  CLOCK: [2015-05-19 Tue 21:52]
