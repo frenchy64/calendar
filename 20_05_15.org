@@ -50,6 +50,11 @@
   Env exp -> type -> exp
   - added hybrid checking-rewrite judgement
   - updated everything but Java rules
+  - need to
+    - add back T-{Method,New,Field}
+      - should rewrite from reflective to nonreflective
+      - don't need reflective to reflective rule, since illtyped
+    - check that T-{Method,New,Field}Static still make sense
 ** TODO Update proof
 
 * TODO Gradual typing Plan
