@@ -1,0 +1,65 @@
+* TODO POPL Paper [5/11]
+   DEADLINE: <2015-05-19 Tue 21:00>
+
+** TODO link multimethods with HMaps
+
+** TODO talk about how MM, HMaps, Java are the major features of core.typed
+
+** synergy between multimethods and occurrence typing
+
+** TODO crystal clear CONTRIBUTIONS section
+
+
+** TODO refer directly to examples repo
+
+** TODO Update metatheory section with new JVM ops
+
+** TODO Survey other JVM languages
+
+* DONE Gradual Typing [1/1]
+   DEADLINE: <2015-05-19 Tue 21:00>
+
+* Campaign [1/3]
+
+** TODO monkey patch load in require
+** TODO blog post on REPL
+- need to fix REPL in branch first
+  - need to recurse into 'do' expressions
+- don't want to break typed special forms
+  - idea: track whether a do expression is a special form
+    as you analyze it
+    - ie. `(do ::t/special-form ...)` might be special, remember that...
+- can we reuse c.c.t.check.do?
+  - not really, takes an AST, I want a function that takes Clojure syntax
+
+* TODO GSoC [0/1]
+
+** TODO Merge Transients
+   DEADLINE: <2015-05-23 Sat>
+
+
+* TODO Digging
+  need more digging for untyped gradual polymorphic things
+  - better sampling
+
+* TODO POPL Paper [0/2]
+  DEADLINE: <2015-05-21 Thu>
+** TODO combined type-check rewrite relation
+   DEADLINE: <2015-05-20 Wed>
+  takes expression
+  Env exp -> type -> exp
+  - added hybrid checking-rewrite judgement
+  - updated everything but Java rules
+  - need to
+    - add back T-{Method,New,Field}
+      - should rewrite from reflective to nonreflective
+      - don't need reflective to reflective rule, since illtyped
+    - check that T-{Method,New,Field}Static still make sense
+** TODO Update proof
+
+* TODO Gradual typing Plan
+  - lay out all challenges
+  - skeleton for paper
+
+* TODO require/load finish
+  DEADLINE: <2015-05-21 Thu>
