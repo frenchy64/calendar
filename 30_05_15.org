@@ -1,0 +1,134 @@
+* TODO POPL Paper [5/11]
+   DEADLINE: <2015-05-19 Tue 21:00>
+
+** TODO link multimethods with HMaps
+
+** TODO talk about how MM, HMaps, Java are the major features of core.typed
+
+** synergy between multimethods and occurrence typing
+
+** TODO crystal clear CONTRIBUTIONS section
+
+
+** TODO refer directly to examples repo
+
+** TODO Update metatheory section with new JVM ops
+
+** TODO Survey other JVM languages
+
+* Campaign [1/2]
+** TODO blog post on REPL
+- need to fix REPL in branch first
+  - need to recurse into 'do' expressions
+- don't want to break typed special forms
+  - idea: track whether a do expression is a special form
+    as you analyze it
+    - ie. `(do ::t/special-form ...)` might be special, remember that...
+- can we reuse c.c.t.check.do?
+  - not really, takes an AST, I want a function that takes Clojure syntax
+
+* TODO GSoC [0/1]
+
+** TODO Merge Transients
+   DEADLINE: <2015-05-23 Sat>
+
+
+* TODO Digging
+  need more digging for untyped gradual polymorphic things
+  - better sampling
+
+* TODO POPL Paper [3/5]
+  DEADLINE: <2015-05-21 Thu>
+** DONE combined type-check rewrite relation
+   DEADLINE: <2015-05-20 Wed>
+  takes expression
+  Env exp -> type -> exp
+  - added hybrid checking-rewrite judgement
+  - updated everything but Java rules
+
+
+** DONE add back T-{Method,New,Field}
+  - should rewrite from reflective to nonreflective
+  - don't need reflective to reflective rule, since illtyped
+** DONE check that T-{Method,New,Field}Static still make sense
+
+** TODO implement Resolve{Field,New,Method}
+
+** TODO Update proof
+
+* TODO Gradual typing Plan
+  - lay out all challenges
+  - skeleton for paper
+
+
+* TODO define an eval-fn in check-form-common for nREPL
+  DEADLINE: <2015-05-21 Thu>
+
+* TODO Implement :load-file nREPL packet
+
+* TODO Update theorem to use new judgement
+  DEADLINE: <2015-05-23 Sat>
+e rewrites to e'
+
+* TODO Typed Clojure code
+  - how much using various features
+  - collection of repositories
+    - decide on corpus
+    - eg. how often do they call java methods?
+    - how often do they specify a Java method is nullable
+    - HMaps in more code?
+    - how many multimethods
+  - ask on twitter
+* TODO add subtyping for classes to paper
+  - should just need C <: Object
+  - no other subtyping
+  - bit of a copout but not the important part of the paper
+
+* TODO Implementation
+  - release REPL
+  - implement reflection
+    - more tests
+
+* TODO update proof
+  DEADLINE: <2015-05-28 Thu>
+
+* DONE Fix T-Method
+  CLOCK: [2015-05-27 Wed 09:10]--[2015-05-27 Wed 09:15] =>  0:05
+* DONE Fix T-Field
+  CLOCK: [2015-05-27 Wed 09:15]--[2015-05-27 Wed 09:17] =>  0:02
+* DONE Check T-New
+  CLOCK: [2015-05-27 Wed 09:17]--[2015-05-27 Wed 09:19] =>  0:02
+* DONE Inline Fld, Mth, Ctr [3/3]
+** DONE Inline Fld
+   CLOCK: [2015-05-27 Wed 09:20]--[2015-05-27 Wed 09:23] =>  0:03
+** DONE inline Mth
+   CLOCK: [2015-05-27 Wed 09:23]--[2015-05-27 Wed 09:25] =>  0:02
+** DONE inline New
+   CLOCK: [2015-05-27 Wed 09:29]--[2015-05-27 Wed 09:30] =>  0:01
+   CLOCK: [2015-05-27 Wed 09:25]--[2015-05-27 Wed 09:29] =>  0:04
+
+
+
+
+* DONE Finish TJ
+  CLOCK: [2015-05-27 Wed 09:30]--[2015-05-27 Wed 09:36] =>  0:06
+  - should just be two cases
+  - actually just one!
+
+* DONE Release 0.3.0-alpha1 [3/3]
+** DONE Run test suite
+   CLOCK: [2015-05-27 Wed 09:49]--[2015-05-27 Wed 11:18] =>  1:29
+** DONE Fix apply-hmap-test 
+   CLOCK: [2015-05-27 Wed 11:20]--[2015-05-27 Wed 11:33] =>  0:13
+** DONE Cast test
+   CLOCK: [2015-05-27 Wed 11:33]--[2015-05-27 Wed 11:52] =>  0:19
+** fix fn :forall test
+
+* TODO Need to say TJ is indeed a function
+  - the smallest (most subtyped class) C
+
+* TODO update core.typed latest in imap
+* TODO Fix vim-fireplace :load-file
+  - if throws an error, the ex msg isn't printed
+
+* TODO resolution field implement
