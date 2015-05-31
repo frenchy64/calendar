@@ -68,7 +68,6 @@
 
 * TODO Update theorem to use new judgement
   DEADLINE: <2015-05-23 Sat>
-  CLOCK: [2015-05-23 Sat 08:29]
 e rewrites to e'
 
 * TODO Typed Clojure code
@@ -92,3 +91,36 @@ e rewrites to e'
 
 * TODO update proof
   DEADLINE: <2015-05-28 Thu>
+
+* DONE Fix T-Method
+  CLOCK: [2015-05-27 Wed 09:10]--[2015-05-27 Wed 09:15] =>  0:05
+* DONE Fix T-Field
+  CLOCK: [2015-05-27 Wed 09:15]--[2015-05-27 Wed 09:17] =>  0:02
+* DONE Check T-New
+  CLOCK: [2015-05-27 Wed 09:17]--[2015-05-27 Wed 09:19] =>  0:02
+* DONE Inline Fld, Mth, Ctr [3/3]
+** DONE Inline Fld
+   CLOCK: [2015-05-27 Wed 09:20]--[2015-05-27 Wed 09:23] =>  0:03
+** DONE inline Mth
+   CLOCK: [2015-05-27 Wed 09:23]--[2015-05-27 Wed 09:25] =>  0:02
+** DONE inline New
+   CLOCK: [2015-05-27 Wed 09:29]--[2015-05-27 Wed 09:30] =>  0:01
+   CLOCK: [2015-05-27 Wed 09:25]--[2015-05-27 Wed 09:29] =>  0:04
+
+
+
+
+* DONE Finish TJ
+  CLOCK: [2015-05-27 Wed 09:30]--[2015-05-27 Wed 09:36] =>  0:06
+  - should just be two cases
+  - actually just one!
+
+* TODO Release 0.3.0 [4/4]
+** DONE Run test suite
+   CLOCK: [2015-05-27 Wed 09:49]--[2015-05-27 Wed 11:18] =>  1:29
+** DONE Fix apply-hmap-test 
+   CLOCK: [2015-05-27 Wed 11:20]--[2015-05-27 Wed 11:33] =>  0:13
+** DONE Cast test
+   CLOCK: [2015-05-27 Wed 11:33]--[2015-05-27 Wed 11:52] =>  0:19
+** DONE fix fn :forall test
+

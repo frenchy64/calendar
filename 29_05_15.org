@@ -115,12 +115,20 @@ e rewrites to e'
   - should just be two cases
   - actually just one!
 
-* DONE Release 0.3.0-alpha1 [4/4]
+* DONE Release 0.3.0-alpha1 [3/3]
 ** DONE Run test suite
    CLOCK: [2015-05-27 Wed 09:49]--[2015-05-27 Wed 11:18] =>  1:29
 ** DONE Fix apply-hmap-test 
    CLOCK: [2015-05-27 Wed 11:20]--[2015-05-27 Wed 11:33] =>  0:13
 ** DONE Cast test
    CLOCK: [2015-05-27 Wed 11:33]--[2015-05-27 Wed 11:52] =>  0:19
-** DONE fix fn :forall test
+** fix fn :forall test
 
+* TODO Need to say TJ is indeed a function
+  - the smallest (most subtyped class) C
+
+* TODO update core.typed latest in imap
+* TODO Fix vim-fireplace :load-file
+  - if throws an error, the ex msg isn't printed
+
+* TODO resolution field implement

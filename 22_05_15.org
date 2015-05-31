@@ -70,12 +70,15 @@
 
 * TODO Implement :load-file nREPL packet
 
-* TODO Update B-Field etc.
-* Implement metafunctions
-* Update theorem to use new judgement
+* DONE Update B-Field etc.
+* DONE Implement metafunctions
+  DEADLINE: <2015-05-22 Fri>
+  CLOCK: [2015-05-22 Fri 08:16]--[2015-05-22 Fri 10:22] =>  2:06
+  
+* TODO Update theorem to use new judgement
 e rewrites to e'
 
-* Typed Clojure code
+* TODO Typed Clojure code
   - how much using various features
   - collection of repositories
     - decide on corpus
@@ -84,3 +87,7 @@ e rewrites to e'
     - HMaps in more code?
     - how many multimethods
   - ask on twitter
+* TODO add subtyping for classes to paper
+  - should just need C <: Object
+  - no other subtyping
+  - bit of a copout but not the important part of the paper

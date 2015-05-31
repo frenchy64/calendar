@@ -61,15 +61,6 @@
   - skeleton for paper
 
 
-* TODO define an eval-fn in check-form-common for nREPL
-  DEADLINE: <2015-05-21 Thu>
-
-* TODO Implement :load-file nREPL packet
-
-* TODO Update theorem to use new judgement
-  DEADLINE: <2015-05-23 Sat>
-e rewrites to e'
-
 * TODO Typed Clojure code
   - how much using various features
   - collection of repositories
@@ -84,45 +75,6 @@ e rewrites to e'
   - no other subtyping
   - bit of a copout but not the important part of the paper
 
-* TODO Implementation
-  - release REPL
-  - implement reflection
-    - more tests
-
-* TODO update proof
-  DEADLINE: <2015-05-28 Thu>
-
-* DONE Fix T-Method
-  CLOCK: [2015-05-27 Wed 09:10]--[2015-05-27 Wed 09:15] =>  0:05
-* DONE Fix T-Field
-  CLOCK: [2015-05-27 Wed 09:15]--[2015-05-27 Wed 09:17] =>  0:02
-* DONE Check T-New
-  CLOCK: [2015-05-27 Wed 09:17]--[2015-05-27 Wed 09:19] =>  0:02
-* DONE Inline Fld, Mth, Ctr [3/3]
-** DONE Inline Fld
-   CLOCK: [2015-05-27 Wed 09:20]--[2015-05-27 Wed 09:23] =>  0:03
-** DONE inline Mth
-   CLOCK: [2015-05-27 Wed 09:23]--[2015-05-27 Wed 09:25] =>  0:02
-** DONE inline New
-   CLOCK: [2015-05-27 Wed 09:29]--[2015-05-27 Wed 09:30] =>  0:01
-   CLOCK: [2015-05-27 Wed 09:25]--[2015-05-27 Wed 09:29] =>  0:04
-
-
-
-
-* DONE Finish TJ
-  CLOCK: [2015-05-27 Wed 09:30]--[2015-05-27 Wed 09:36] =>  0:06
-  - should just be two cases
-  - actually just one!
-
-* DONE Release 0.3.0-alpha1 [3/3]
-** DONE Run test suite
-   CLOCK: [2015-05-27 Wed 09:49]--[2015-05-27 Wed 11:18] =>  1:29
-** DONE Fix apply-hmap-test 
-   CLOCK: [2015-05-27 Wed 11:20]--[2015-05-27 Wed 11:33] =>  0:13
-** DONE Cast test
-   CLOCK: [2015-05-27 Wed 11:33]--[2015-05-27 Wed 11:52] =>  0:19
-** fix fn :forall test
 
 * TODO Need to say TJ is indeed a function
   - the smallest (most subtyped class) C
@@ -132,3 +84,56 @@ e rewrites to e'
   - if throws an error, the ex msg isn't printed
 
 * TODO resolution field implement
+* TODO update proof [19/25]
+  - do we need a gradual guarantee kind of lemma?
+    - no
+** DONE Lemma A.4
+   CLOCK: [2015-05-31 Sun 10:58]--[2015-05-31 Sun 11:06] =>  0:08
+** DONE Check lemma A.5
+   CLOCK: [2015-05-31 Sun 11:07]--[2015-05-31 Sun 11:10] =>  0:03
+   uses path-translate?
+** DONE Definition A.1
+   CLOCK: [2015-05-31 Sun 11:10]--[2015-05-31 Sun 11:13] =>  0:03
+** DONE Add T-{New,Field,Method} [3/3]
+   CLOCK: [2015-05-31 Sun 11:57]--[2015-05-31 Sun 12:08] =>  0:11
+*** DONE Add T-New proof 
+    CLOCK: [2015-05-31 Sun 12:08]--[2015-05-31 Sun 12:08] =>  0:00
+*** DONE Add T-Field proof
+    CLOCK: [2015-05-31 Sun 12:23]--[2015-05-31 Sun 12:41] =>  0:18
+*** DONE Add T-Method proof
+    CLOCK: [2015-05-31 Sun 12:41]--[2015-05-31 Sun 12:52] =>  0:11
+
+** DONE maybe remove T-{New,Field,Method}Static
+
+    - double check these rules
+  - removed
+** DONE Check trivial rules
+** DONE Check T-Do
+** DONE T-Def{Method,Multi} may have changed [2/2]
+   CLOCK: [2015-05-31 Sun 13:00]--[2015-05-31 Sun 13:04] =>  0:04
+*** DONE update rewrite T-DefMulti
+*** DONE update T-DefMethod
+    CLOCK: [2015-05-31 Sun 13:04]--[2015-05-31 Sun 13:11] =>  0:07
+
+** DONE update T-App
+** DONE update T-IsA
+** DONE update T-GetHMap
+** DONE update T-GetHMapAbsent
+** DONE update T-GetHMapPartialDefault
+** DONE update T-If
+** DONE update T-Assoc
+** DONE update T-Let
+** DONE update T-Clos
+** DONE update T-Multi
+** DONE update T-Abs
+** TODO B-BetaClosure is incomplete
+** TODO Theorem A.1 proof sketch needs updating
+** TODO Delete Theorem A.3, A.4, A.5, A.6, Lemma A.8
+** TODO Proof of A.5 in unfinished
+** TODO Update Syntax figure
+** TODO Complete T-App
+* TODO implement reflection resolution
+  - field resolution seems like an easy starting goal
+* DONE update feeds2imap library to latest core.typed
+* TODO Remove blue highlighting trdiff
+* TODO beginning of section 3 should introduce rewriting judgement

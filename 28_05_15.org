@@ -115,7 +115,7 @@ e rewrites to e'
   - should just be two cases
   - actually just one!
 
-* TODO Release 0.3.0 [4/4]
+* DONE Release 0.3.0-alpha1 [4/4]
 ** DONE Run test suite
    CLOCK: [2015-05-27 Wed 09:49]--[2015-05-27 Wed 11:18] =>  1:29
 ** DONE Fix apply-hmap-test 
