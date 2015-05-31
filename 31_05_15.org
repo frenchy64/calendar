@@ -132,6 +132,9 @@
 ** TODO Proof of A.5 in unfinished
 ** TODO Update Syntax figure
 ** TODO Complete T-App
+** TODO add back T-{New,Field,Method}Static proof and rules
+   - subsumption can always be applied so we can rewrite
+     nonreflective interop, ie. we need these rules
 * TODO implement reflection resolution
   - field resolution seems like an easy starting goal
 * DONE update feeds2imap library to latest core.typed
