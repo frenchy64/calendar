@@ -84,7 +84,7 @@
   - if throws an error, the ex msg isn't printed
 
 * TODO resolution field implement
-* TODO update proof [19/25]
+* TODO update proof [25/30]
   - do we need a gradual guarantee kind of lemma?
     - no
 ** DONE Lemma A.4
@@ -126,15 +126,19 @@
 ** DONE update T-Clos
 ** DONE update T-Multi
 ** DONE update T-Abs
-** TODO B-BetaClosure is incomplete
-** TODO Theorem A.1 proof sketch needs updating
-** TODO Delete Theorem A.3, A.4, A.5, A.6, Lemma A.8
-** TODO Proof of A.5 in unfinished
-** TODO Update Syntax figure
+** DONE T-HMap case needs part 4
+** DONE B-BetaClosure is incomplete
+** TODO B-BetaMulti finish proof
+** DONE Theorem A.1 proof sketch needs updating
+** DONE Delete Theorem A.3, A.4, A.5, A.6, Lemma A.8
+** TODO Proof of Lemma A.5 in unfinished
+** DONE Update Syntax figure
 ** TODO Complete T-App
-** TODO add back T-{New,Field,Method}Static proof and rules
+** DONE add back T-{New,Field,Method}Static proof and rules
    - subsumption can always be applied so we can rewrite
      nonreflective interop, ie. we need these rules
+** TODO T-Multi proof
+** TODO Update abbreviations
 * TODO implement reflection resolution
   - field resolution seems like an easy starting goal
 * DONE update feeds2imap library to latest core.typed
@@ -147,3 +151,5 @@
 * TODO highlight nonreflective reflections only appear in the output
   - not intended for the programmer
   - consider grey background
+* DONE screencast 2
+** TODO open screenflow

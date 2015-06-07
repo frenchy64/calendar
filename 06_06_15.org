@@ -84,7 +84,7 @@
   - if throws an error, the ex msg isn't printed
 
 * TODO resolution field implement
-* TODO update proof [25/30]
+* TODO update proof [25/32]
   - do we need a gradual guarantee kind of lemma?
     - no
 ** DONE Lemma A.4
@@ -139,6 +139,11 @@
      nonreflective interop, ie. we need these rules
 ** TODO T-Multi proof
 ** TODO Update abbreviations
+** TODO AssocHMap proof
+** TODO IfTrue part 4
+** TODO IfFalse part 4
+** TODO B-Abs proof
+** TODO distribute the subsumption rule?
 * TODO implement reflection resolution
   - field resolution seems like an easy starting goal
 * DONE update feeds2imap library to latest core.typed
@@ -146,10 +151,49 @@
 * TODO beginning of section 3 should introduce rewriting judgement
 * TODO fix require :reload
 
-* TODO publicity 
 * TODO harvest things about :no-check'd
 * TODO highlight nonreflective reflections only appear in the output
   - not intended for the programmer
   - consider grey background
-* DONE screencast 2
-** TODO open screenflow
+* TODO prove by cases on operational semantics
+* TODO consistency
+  if you have a function and it claims that it's a predicate that
+  tells you that x in the env is a number, and it's in some environment,
+  then the environment of the predicate's closure and the current environment
+  
+  
+(l([x])
+  (lambda ([y])
+    (number? x)))
+
+
+
+(let ([x 1]) 
+
+     (define f [(x, 1); (lambda (y) (number? x))] : Any -> Boolean : Number_x)
+     
+     .....
+     (let ([x "String"])
+        *** \rho = [(x, "String"), (f, [(x, 1); (lambda (y) (number? x))])]
+            \rho is not consistent because: the value for `f` is not consistent with \rho
+            because: 
+         (if (*f* 5) : Boolean ; Number_x | !Number_x
+             (add1 x) |- Number therefore \rho |= Number_x but ...
+            ....)
+         )
+     
+     
+     
+     
+     
+     
+     )
+- Simple way to achieve consistency is rename let-bindings before extending \rho
+
+* TODO induction and cases on evaluation
+* TODO cases on the second last rule of the typing derivation, with subsumption as the second last rule
+* TODO experiment with a simple derivation
+  
+* TODO By induction on the typing derivation
+  - means we can apply the induction hypothesis to subderivations of the
+    current derivation

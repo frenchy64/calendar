@@ -140,3 +140,4 @@
 * DONE update feeds2imap library to latest core.typed
 * TODO Remove blue highlighting trdiff
 * TODO beginning of section 3 should introduce rewriting judgement
+* TODO fix require :reload
