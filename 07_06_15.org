@@ -192,6 +192,8 @@
 
 * TODO induction and cases on evaluation
 * TODO cases on the second last rule of the typing derivation, with subsumption as the second last rule
+  DEADLINE: <2015-06-07 Sun>
+  CLOCK: [2015-06-07 Sun 10:27]
 * TODO experiment with a simple derivation
   
 * TODO By induction on the typing derivation
