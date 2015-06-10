@@ -84,7 +84,7 @@
   - if throws an error, the ex msg isn't printed
 
 * TODO resolution field implement
-* TODO update proof [25/32]
+* TODO update proof [28/36]
   - do we need a gradual guarantee kind of lemma?
     - no
 ** DONE Lemma A.4
@@ -128,12 +128,12 @@
 ** DONE update T-Abs
 ** DONE T-HMap case needs part 4
 ** DONE B-BetaClosure is incomplete
-** TODO B-BetaMulti finish proof
+** DONE B-BetaMulti finish proof
 ** DONE Theorem A.1 proof sketch needs updating
 ** DONE Delete Theorem A.3, A.4, A.5, A.6, Lemma A.8
 ** TODO Proof of Lemma A.5 in unfinished
 ** DONE Update Syntax figure
-** TODO Complete T-App
+** DONE Complete T-App
 ** DONE add back T-{New,Field,Method}Static proof and rules
    - subsumption can always be applied so we can rewrite
      nonreflective interop, ie. we need these rules
@@ -143,7 +143,8 @@
 ** TODO IfTrue part 4
 ** TODO IfFalse part 4
 ** TODO B-Abs proof
-** TODO distribute the subsumption rule?
+** DONE distribute the subsumption rule?
+** TODO add 'inc' to primitives and proof
 * TODO implement reflection resolution
   - field resolution seems like an easy starting goal
 * DONE update feeds2imap library to latest core.typed
@@ -199,3 +200,4 @@
 * DONE By induction on the typing derivation
   - means we can apply the induction hypothesis to subderivations of the
     current derivation
+* TODO update body of paper with stuff changed in proof
